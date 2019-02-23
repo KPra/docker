@@ -1,0 +1,32 @@
+Docker
+-------
+
+Docker is an open source computer program developed by Solomon Hykes, which was initially started as an internal project within dotCloud, a PAAS company.
+It was built on dotCloud's proprietary technology, which is itself built on earlier open-source projects such as Cloudlets.
+It was released in March 2013.
+
+Docker is an operating system level virtualization also known as containerization software.
+OS level virtualization is where the kernel allows for the existence of multiple user space instances known as containers/partitions/jails/virtual environments,
+where the programs running inside them consider them as full fledged computer environments.
+These programs can only see the containers contents and resources allocated to the container.
+
+It is primarily built for Linux, where it uses the features of the kernel to isolate the containers, which avoids the overhead of running VMs.
+Since version 0.9, Docker includes the libcontainer library as its own way to directly use virtualization facilities provided by the Linux kernel.
+Docker containers do not include a seperate OS.
+	- cgroups - for resource management in terms of CPU and memory
+	- namespaces - for isolation in terms of what can be seen by the containers as part of the OS environment like
+			process trees
+			mounted devices
+			user groups
+			network
+			peripheral devices
+			file systems
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Docker makes it really easy to install and run software without worrying about dependencies or setup.
+Docker is an ecosystem which revolves around creating/deploying/managing containers.
+
+Docker image - is a single file with all the program configs, dependencies
+Docker container - is an instance of an image, running representation of a docker image with its own set of hardware resources
